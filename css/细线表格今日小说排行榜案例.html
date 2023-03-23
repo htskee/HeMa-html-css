@@ -13,8 +13,18 @@
         }
 
         table,
-        td {
+        th {
+            height: 30px;
+        }
+
+        td,
+        th {
             border: 1px solid pink;
+            /* collapse 单词是合并的意思 border-collapse:collapse 表示相邻边框合并在一起; */
+            border-collapse: collapse;
+            font-size: 14px;
+            /* 居中对齐 */
+            text-align: center;
         }
     </style>
 </head>

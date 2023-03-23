@@ -5,20 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>边框会影响盒子的实际大小</title>
+    <title>盒子模型之内边距</title>
     <style>
-        /* 我们需要一个200*200的box,但是这个盒子有10像素的框架 */
         div {
             width: 200px;
             height: 200px;
             background-color: pink;
-            border: 10px solid red;
+            padding-left: 100px;
+            padding-top: 13px;
+            padding: 13px;
         }
     </style>
 </head>
 
 <body>
-    <div></div>
+    <div>
+        盒子的内容是content盒子的内容是content盒子的内容是content盒子的内容是content
+    </div>
 </body>
 
 </html>

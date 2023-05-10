@@ -8,6 +8,17 @@
     margin: auto;
 }
 
+
+li {
+    /* 清除li样式 */
+    list-style: none;
+}
+
+a {
+    /* 去除链接下划线 */
+    text-decoration: none;
+}
+
 .header {
     height: 42px;
     background-color: pink;
@@ -16,7 +27,46 @@
 }
 
 .logo {
+    float: left;
     width: 198px;
     height: 42px;
     background-color: purple;
+
+}
+
+.nav {
+    float: left;
+    margin-left: 60px;
+}
+
+.nav ul li {
+    float: left;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    /* 转换成块级元素 */
+    display: block;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #050505;
+
+}
+
+.nav ul li a:hover {
+    /* 鼠标经过下边框变蓝色*/
+    border-bottom: 2px solid #00a4ff;
+    /* 字体变蓝色  */
+    color: #00a4ff;
+}
+
+/* search 搜索模块 */
+.search {
+    float: left;
+    width: 412px;
+    height: 42px;
+    background-color: skyblue;
+    margin-left: 50px;
 }

@@ -8,6 +8,9 @@
     margin: auto;
 }
 
+body {
+    background-color: #f3f5f7;
+}
 
 li {
     /* 清除li样式 */
@@ -21,7 +24,7 @@ a {
 
 .header {
     height: 42px;
-    background-color: pink;
+    /* background-color: pink; */
     /* 注意此地方会层叠w 里面的margin */
     margin: 30px auto;
 }
@@ -30,7 +33,7 @@ a {
     float: left;
     width: 198px;
     height: 42px;
-    background-color: purple;
+    /* background-color: purple; */
 
 }
 
@@ -68,5 +71,125 @@ a {
     width: 412px;
     height: 42px;
     background-color: skyblue;
-    margin-left: 50px;
+    margin-left: 70px;
+}
+
+.search input {
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    /* 右边框不要 */
+    border-right: 0;
+    color: #bfbfbf;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    /* 按钮 button 默认有边框,需要手动去掉*/
+    border: 0;
+    background: url(images/fa-search.png);
+}
+
+.user {
+    float: right;
+    line-height: 42px;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* banner区域 */
+.banner {
+    height: 421px;
+    background-color: #1c036c;
+}
+
+.banner .w {
+    height: 421px;
+    /* 背景不重复 垂直向上水平居中对齐 */
+    background: url(images/banner2.png) no-repeat top center;
+}
+
+.subnav {
+    float: left;
+    width: 190px;
+    height: 421px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.subnav ul li {
+    font-size: 14px;
+    line-height: 45px;
+    padding: 0 20px;
+}
+
+.subnav ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.subnav ul li a span {
+    float: right;
+}
+
+.subnav ul li a:hover {
+    color: #00a4ff;
+}
+
+.course {
+    float: right;
+    width: 230px;
+    height: 300px;
+    background-color: #fff;
+    /* 浮动的盒子不会有外边距合并的问题 */
+    margin-top: 50px;
+}
+
+.course h2 {
+    height: 48px;
+    background-color: #9bceea;
+    /* 水平居中 */
+    text-align: center;
+    /* 垂直居中 */
+    line-height: 48px;
+    font-size: 18px;
+    color: #fff;
+
+}
+
+.bd {
+    padding: 0 20px;
+}
+
+.bd ul li {
+    padding: 14px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.bd ul li h4 {
+    font-size: 16px;
+    color: #4e4e4e;
+}
+
+.bd ul li p {
+    font-size: 14px;
+    color: #a5a5a5;
+}
+
+.bd .more {
+    display: block;
+    height: 38px;
+    border: 1px solid #00a4ff;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 38px;
+    color: #00a4ff;
+    font-size: 16px;
+    font-weight: 700;
+
 }
